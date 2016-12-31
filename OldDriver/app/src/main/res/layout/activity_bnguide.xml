@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_bnguide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context="com.example.olddriver.activity.BNGuideActivity">
+
+    <include layout="@layout/content_bnguide" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@mipmap/add_markers"
+        app:backgroundTint="#88ffffff"
+        app:rippleColor="#99ffffff"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"/>
+</android.support.design.widget.CoordinatorLayout>
