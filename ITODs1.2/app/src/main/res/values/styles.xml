@@ -5,7 +5,12 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/Gold</item>
+        <item name="android:textColor">@color/Goldenrod</item>
+        <!--设置Menu菜单的背景色-->
+        <item name="android:itemBackground">@color/White</item>
+        <!--设置menu菜单不遮挡actionbar-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -16,5 +21,18 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--选项栏不浮动-->
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
 
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/Gold</item>
+    </style>
+
+    <style name="anim_menu_popup">
+        <item name="android:windowEnterAnimation">@anim/menu_popup_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_popup_out</item>
+    </style>
 </resources>

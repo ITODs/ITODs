@@ -2,8 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/action_search"
+        app:showAsAction="always|withText"
+        app:actionViewClass="android.widget.SearchView"
+        android:title="@string/action_search"/>
+
+    <item
+        android:id="@+id/action_scans"
+        android:contentInsetStart="-30dp"
+        android:icon="@mipmap/ic_menu_scan"
+        android:title="@string/action_scans" />
+    <item
+        android:id="@+id/action_adds"
+        android:icon="@mipmap/ic_menu_add"
+        android:title="@string/action_adds" />
+    <item
         android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:icon="@mipmap/ic_menu_group"
+        android:title="@string/action_group" />
+    <item
+        android:id="@+id/action_advices"
+        android:icon="@mipmap/ic_menu_suggest"
+        android:title="@string/action_advices" />
 </menu>
